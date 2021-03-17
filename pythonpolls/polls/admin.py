@@ -2,6 +2,10 @@ from django.contrib import admin
 
 from .models import Question, Choice
 
+admin.site.site_header = "Python Polls Admin"
+admin.site.site_title = "Python Polls Admin Area"
+admin.site.index_title = "Welcome to Python Polls Admin"
+
 class ChoiceInline(admin.TabularInline):
   model = Choice
   extra = 3

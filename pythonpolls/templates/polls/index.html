@@ -1,4 +1,5 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %} 
+{% block content %}
 <h1 class="text-center mb-3">Poll Questions</h1>
 {% if latest_question_list %} {% for question in latest_question_list %}
 <div class="card mb-3">
@@ -16,6 +17,8 @@
     >
   </div>
 </div>
-{% endfor %} {% else %}
+{% endfor %} 
+{% else %}
 <p>No polls available</p>
-{% endif %} {% endblock %}
+{% endif %} 
+{% endblock %}
